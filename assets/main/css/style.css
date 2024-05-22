@@ -35,17 +35,41 @@
          url('../fonts/rubik-v28-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
   }
   
+  body {
+       font-family: 'Rubik';
+       font-size: 16px;
+       font-weight: 400;
+       color: #4F5665;
+  }
 /* ---------------------------- Home Section Begin ---------------------------- */
 * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
 }
+.home {
+     height: 100vh;
+}
+/* ---------------------------- Home Section End ---------------------------- */
+.home_btn {
+     background-color: #F53855;
+     text-decoration: none;
+     font-weight: 700;
+     color: white;
+     padding: 17px 50px;
+     border-radius: 10px;
+     box-shadow: rgb(245, 56, 56, 0.35) 0px 30px 40px -7px;
+     display: inline-block;
+}
 
-body {
-     font-family: 'Rubik';
-     font-size: 16px;
-     font-weight: 400;
+.home_btn:hover {   
+     background-color: #D32f2f;
+
+}
+.home_heder {
+     font-size: 50px;
+     font-weight: 500;
+     color: #0B132A;
 }
 /* navbar section begin */
 .logo_1 {
@@ -70,11 +94,15 @@ body {
      color: #F53855;
      border-radius: 50px;
      border: 1px solid  #F53855;
-     transition: 0.4s;
+     transition: 100.4s;
 }
 .sign_up:hover {
      background-color: #F53855;
      color: white;
 }
 /* navbar section end */
-/* ---------------------------- Home Section End ---------------------------- */
+@media screen and (max-width: 768px) {
+     .home {
+          height: 100% !important;    
+          }
+}
