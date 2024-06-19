@@ -57,6 +57,7 @@
  .logo_1 {
       font-weight: 500;
       font-size: 20px;
+      color: #0B132A;
  }
  .logo_2 {
       font-weight: 700;
@@ -194,11 +195,13 @@
  
  .card_cs_premium {
       border-color: rgba(245, 56, 56, 1);
+      box-shadow: rgba(245, 56, 56, 0.35) 0px 30px 40px -7px;
  }
  
  .btn_premium {
       background-color: #F53838;
       color: #fbfbfb;
+      box-shadow: rgba(245, 56, 56, 0.35) 0px 30px 40px -7px;
  }
  
  .btn_premium:hover {
@@ -206,34 +209,121 @@
       color: #F53838;
  }
  /* ---------------------------- Plan Section End ---------------------------- */
-
-  /* ---------------------------- Comment Section Begin ---------------------------- */
-.comment {
-     padding: 30px;
-     border: 2px solid rgba(221, 221, 221, 1);
-     border-radius: 10px;
+ 
+ 
+ 
+ /* ---------------------------- Comment Section Begin ---------------------------- */
+ .comment {
+      padding: 30px;
+      border: 2px solid rgba(221, 221, 221, 1);
+      border-radius: 10px;
+ }
+ .author {
+      color: #0B132A;
+      font-weight: 500;
+      font-size: 18px;
+ }
+ .country {
+      color: #4F5665;
+      font-size: 14px;
+ }
+ .message {
+      color: #0B132A;
+ }
+ 
+ .comment-page .carousel-control-prev-icon,
+ .comment-page .carousel-control-next-icon {
+      display: none;
+ }
+ .comment-page .carousel-control-prev,
+ .comment-page .carousel-control-next {
+      position: static;
+      background-image: url("../images/prev_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+      border: 2px solid #F53838;
+      border-radius: 50%;
+      padding: 26px;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+ }
+ 
+ .comment-page .carousel-control-prev:hover,
+ .comment-page .carousel-control-next:hover {
+      background-color: #F53838;
+      background-image: url("../images/next_arrow.svg");
+      rotate: 360deg;
+ }
+ .comment-page .carousel-control-prev:hover {
+      rotate: 180deg;
+ }
+ 
+ .comment-page .carousel-control-next {
+      rotate: 180deg;
+ }
+ 
+ .text_resize {
+      width: 40%;
+ }
+ /* ---------------------------- Comment Section End ---------------------------- */
+ 
+ 
+ /* ---------------------------- Footer Section Begin ---------------------------- */
+footer {
+     background-color: #f8f8f8;
 }
-.author {
+
+.text_resize_f {
+     width: 65%;
+}
+
+.icon {
+     font-size: 16px;
+     color: #F53838;
+     transition: 0.7;
+}
+.social {
+     display: flex;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     justify-content: center;
+     align-items: center;
+}
+.social:hover {
+     background-color: #f0f0f0;
+}
+.copyright {
+     color: #AFB5C0;
+}
+.footer_head {
      font-weight: 500;
-     font-size: 18px;
+     color: #0B132A;
+     font-size: 18px;    
 }
-.country {
-     color: rgba(79, 86, 101, 1);
-     font-size: 14px;
+.foooter_link {
+     text-decoration: none;
+     color: #4F5665;
+     display: block;
 }
-.massage {
-     color: rgba(11, 19, 42, 1);
+.foooter_link:hover {
+     text-decoration: underline;
+     color: #3A3F44;
 }
-.comment-page .carousel-control-prev {
-     background-color: red;
-     
-}
-   /* ---------------------------- Commet Section End ---------------------------- */
-
+/* ---------------------------- Footer Section End ---------------------------- */
  
  
  @media screen and (max-width: 768px) {
       .home {
            height: 100% !important;
+      }
+      .text_resize {
+           width: 100%;
+      }
+      .text_resize_f {
+          width: 100%;
       }
  }
